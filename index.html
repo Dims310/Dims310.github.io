@@ -4,91 +4,96 @@
         <!-- REMIX ICON -->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="resources/style.css">
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Ardims's GitHub</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
+        
+        <!-- Current CSS -->
+        <link rel="stylesheet" href="resources/style.css">
 
         <script src="resources/github-api.js"></script>
     </head>
     <body>
-        <img src="resources/blob1.svg" alt="" id="shapes1">
-        <img src="resources/blob2.svg" alt="" id="shapes2">
 
-        <!-- Title Page -->
-        <nav class="navbar sticky-top bg-body-tertiary">
-            <div class="mx-auto">
-              <span class="navbar-text">Ardims's GitHub</span>
-            </div>
-        </nav>
-
-        <!-- Start Container of Page -->
+        <!-- Start Container -->
         <div class="container">
-            <div class="row">
-                <div class="col-xxl-6">
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col">
-                                <div class="card-body">
-                                    <h5 class="card-title">Who am I?</h5>
-                                    <p class="card-text">Hi, I'm Dimas, nice to meet you. A young man who learns programming languages related to the backend side to create applications without limits so that he can achieve his goals, build an application that is positive and useful for other users.</p>
-                                    <p class="card-text"><small class="text-body-secondary">Last updated lifetime</small></p>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Start Navbar Top -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid px-0 navbar-top">
+                    <a class="navbar-brand text-reset" href="#">Dims310</a>
+                    <nav class="nav justify-content-end">
+                        <a href="" class="text-reset nav-link">About</a>
+                        <button onclick="darkMode()" class="text-reset nav-link">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </nav>
+                </div>
+            </nav>
+            <!-- End Navbar Top -->
+            
+            <!-- Start Row -->
+            <div class="row row-desc">
+                <div class="col-md-5 github-profile">
+                    <div class="row">
+                        <p id="github-name">Dims310</p>
+                        <p id="github-title">The backend developer</p>
                     </div>
                 </div>
-                <div class="col-xxl-6">
-                    <div class="card mb-3" id="card-lang-tools">
-                        <div class="card-header bg-transparent" id="lang-tools">Language & Tools I used: </div>
-                        <div class="card-body" id="lang-tools"> 
-                            <i class="devicon-laravel-plain colored"></i>
-                            <i class="devicon-php-plain colored"></i>
-                            <i class="devicon-go-original-wordmark colored"></i>
-                            <i class="devicon-html5-plain colored"></i>
-                            <i class="devicon-css3-plain colored"></i>        
-                            <i class="devicon-javascript-plain colored"></i>
-                        </div>
-                      </div>
+                <div class="col-xl-7 align-self-center">
+                    <p id="github-desc">
+                        Developing web using programming languages ​​such as PHP with Laravel, Golang, Javascript. I also have knowledge in database management, and API management.
+                    </p>
                 </div>
             </div>
-            <hr>
-            <div class="row row-cols-1 row-cols-md-3 g-4" id="reposCard">
-                <!-- Looping data trough JS GitHub API -->
+            <!-- End of Row -->
+            
+            <!-- Start Row -->
+            <div class="row mt-sm-5" id="reposCard">
+                
             </div>
+            <!-- End of Row -->
+
+            <!-- More repos... -->
+            <div class="row mt-5">
+                <div class="col">
+                    <a href="https://github.com/Dims310?tab=repositories" class="text-reset nav-link text-end" id="more-repos">More repositories...</a>
+                </div>
+            </div>
+
+            <!-- Start Navbar Bottom -->
+            <div class="navbar-bottom">
+                <p class="text-center" id="connect-w-m">Connect with me</p>
+                <nav class="nav justify-content-center">
+                    <a class="nav-link text-reset" aria-current="page" href="https://github.com/Dims310">                   
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a class="nav-link text-reset" href="https://id.linkedin.com/in/ardimas-dwi-suprayogi-a52785231?trk=people_directory">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="nav-link text-reset" href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </nav>
+            </div>
+            <!-- End Navbar Bottom -->
+
         </div>
+        <!-- End of Container -->
 
-        <!-- End of Container Page -->
-    
-        <!-- Footer Social Media -->
-        <nav class="navbar fixed-bottom bg-body-tertiary navbar-footer">
-            <div class="mx-auto">
-                <ul class="navbar-nav d-flex flex-row gap-3">
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="https://github.com/Dims310">
-                            <i class="ri-github-line remixicon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="https://www.linkedin.com/in/ardimas-dwi-suprayogi-a52785231/">
-                            <i class="ri-linkedin-box-line remixicon"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="https://instagram.com/d.ardimas">
-                            <i class="ri-instagram-line remixicon"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <!-- <model-viewer src="resources/box_blend.glb" alt="box_blend" auto-rotate camera-controls ar ios-src="resources/box_blend.glb"></model-viewer> -->
 
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
     </body>
