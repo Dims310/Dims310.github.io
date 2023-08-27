@@ -53,11 +53,18 @@
 }
 
 body{
+    background: radial-gradient(circle, #c0c0c05e 3%, transparent 11%);
+    background-size: 1em 1em;
+    background-color: #ffffff;
+    opacity: 1;
     padding-bottom: 50px;
 }
 
 .dark-mode {
-    background-color: black;
+    background: radial-gradient(circle, #c0c0c054 3%, transparent 11%);
+    background-size: 1em 1em;
+    background-color: #141E30;
+    opacity: 1;
     color: white;
 }
 
