@@ -1,16 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 *{
-    font-family: 'Fraunces', serif;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
 }
 
 .navbar-brand, .nav-link{
     font-size: 18px;
     color: black;
-}
-
-.nav-link:hover{
-    color: #ea9658;
 }
 
 .row-desc{
@@ -28,12 +25,9 @@
     margin: 0;
 }
 
-#github-title{
-    font-family: 'Epilogue', sans-serif;
-}
-
 .reposCard{
     transition: all .3s ease-in-out;
+    --bs-border-radius: 0rem;
 }
 
 .reposCard:hover{
@@ -49,7 +43,7 @@
 }
 
 #connect-w-m{
-    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
 }
 
 body{
@@ -66,6 +60,28 @@ body{
     background-color: #141E30;
     opacity: 1;
     color: white;
+}
+
+.dark-mode{
+    .card-header {
+        background-color: #192335;
+        color: white;
+    }
+
+    .card-body {
+        background-color: #141E30;
+        color: white;
+    }
+
+    .card-footer {
+        background-color: #192335;
+
+        .btn {
+            color: white;
+        }
+
+    }
+    
 }
 
 @media only screen and (max-width: 1200px) {
