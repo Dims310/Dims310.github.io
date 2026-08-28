@@ -1,92 +1,236 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-*{
-    font-family: "Rubik", sans-serif;
-    font-weight: 300;
+* {
+	font-family: "Inter", sans-serif;
+	box-sizing: border-box;
 }
 
-.navbar-brand, .nav-link{
-    font-size: 18px;
-    color: black;
+body {
+	margin: 0.25rem;
+	padding-inline: 4rem;
 }
 
-.row-desc{
-    margin-top: 8rem;
+header {
+	width: 100%;
+	height: fit-content;
+	max-height: 15%;
+	padding: 0.5rem;
+
+	font-size: 0.8rem;
+
+	display: flex;
+	flex-direction: row;
+
+	align-content: center;
+	justify-content: space-between;
 }
 
-.github-profile .row{
-    margin-right: 0;
-    text-align: end;
-    margin-right: 1rem;
+h3 {
+	margin: 0%;
+	font-weight: 400;
 }
 
-#github-name{
-    font-size: 70px;
-    margin: 0;
+i {
+	font-size: large;
 }
 
-.reposCard{
-    transition: all .3s ease-in-out;
-    --bs-border-radius: 0rem;
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
 }
 
-.reposCard:hover{
-    transform: scale(1.1);
+#hero-section {
+	height: 90vh;
+
+	display: flex;
+	flex-direction: column;
 }
 
-#more-repos{
-    font-size: 16px;
+#hero-section-header {
+	width: 100%;
+	padding: 0.5rem;
+
+	flex: 95%;
+
+	font-size: 4.5rem;
+
+	text-align: center;
+	align-content: center;
+
+	border: 2px;
+	border-color: black;
+	border-style: solid;
 }
 
-.navbar-bottom{
-    margin-top: 8rem;
+#hero-section-highlights {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex: 10%;
+	flex-direction: row;
+
+	justify-content: space-around;
 }
 
-#connect-w-m{
-    font-size: 12px;
+#hero-section-highlights>div {
+	width: 100%;
+	padding: 0.5rem;
+
+	text-align: center;
+	align-content: center;
+
+	color: white;
+	background-color: black;
 }
 
-body{
-    background: radial-gradient(circle, #c0c0c05e 3%, transparent 11%);
-    background-size: 1em 1em;
-    background-color: #ffffff;
-    opacity: 1;
-    padding-bottom: 50px;
+#about-section {
+	padding: 0.5rem;
+
+	font-size: 0.8rem;
+	text-align: justify;
+
+	line-height: 1.6;
+
+	h3 {
+		font-weight: 600;
+		font-size: x-large;
+	}
 }
 
-.dark-mode {
-    background: radial-gradient(circle, #c0c0c054 3%, transparent 11%);
-    background-size: 1em 1em;
-    background-color: #141E30;
-    opacity: 1;
-    color: white;
+#projects-section {
+	font-size: 0.8rem;
+
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+
+	border: 2px;
+	border-color: black;
+	border-style: solid;
+
+	h3 {
+		padding: 0.5rem;
+
+		font-weight: 600;
+		font-size: x-large;
+
+		align-content: center;
+
+		color: white;
+		background-color: black;
+	}
+
+	span {
+		font-weight: 400;
+		font-size: small;
+	}
 }
 
-.dark-mode{
-    .card-header {
-        background-color: #192335;
-        color: white;
-    }
+#projects-section>div {
+	padding: 0.5rem;
 
-    .card-body {
-        background-color: #141E30;
-        color: white;
-    }
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
 
-    .card-footer {
-        background-color: #192335;
-
-        .btn {
-            color: white;
-        }
-
-    }
-    
+	line-height: 1.6;
 }
 
-@media only screen and (max-width: 1200px) {
-    .github-profile .row{
-        text-align: start;
-    }
-  }
+#projects-section-laravel-jenny>div {
+	display: flex;
+	flex-direction: column;
+}
 
+.projects-section-icons {
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+
+	align-items: center;
+}
+
+a:-webkit-any-link {
+	color: black;
+	text-decoration: none;
+}
+
+#connect-section {
+	text-align: center;
+
+	h3 {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	#connect-section-link {
+		width: 100%;
+		height: 1.5rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 2rem;
+
+		font-size: small;
+
+		a {
+			height: 100%;
+			
+			display: flex;
+			flex-direction: row;
+			gap: 0.25rem;
+
+			align-items: center;
+		}
+	}
+}
+
+footer {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+
+	font-size: x-small;
+
+	color: gainsboro;
+
+	text-align: center;
+
+	p {
+		margin: 0;
+	}
+
+	#footer-caption-eng {
+		font-style: italic;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		margin: 0.25rem;
+		padding: 0%;
+	}
+
+	header {
+		font-size: 1rem;
+	}
+
+	#hero-section-header {
+		font-size: 3.75rem;
+	}
+
+	#projects-section {
+		flex-wrap: wrap;
+		gap: 0.5rem;
+
+		h3 {
+			flex: 1
+		}
+	}
+}
